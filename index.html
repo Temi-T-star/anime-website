@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DISCOVER NEW — Anime & Characters</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- SITE HEADER / NAV -->
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="#home">ANIME WORLD</a>
+
+      <!-- Desktop nav -->
+      <nav class="nav-desktop" aria-label="Primary navigation">
+        <ul>
+          <li><a class="nav-link" href="#home" data-target="home">Home</a></li>
+
+          <li class="has-dropdown">
+            <a class="nav-link" href="#gallery" data-target="gallery">Gallery ▾</a>
+            <ul class="dropdown" aria-label="Gallery submenu">
+              <li><a class="nav-link" href="#gallery1" data-target="gallery1">Gallery 1</a></li>
+              <li><a class="nav-link" href="#gallery2" data-target="gallery2">Gallery 2</a></li>
+            </ul>
+          </li>
+
+          <li><a class="nav-link" href="#fanfav" data-target="fanfav">Fan favourite</a></li>
+          <li><a class="nav-link" href="#contact" data-target="contact">Contact us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Hamburger -->
+      <button id="hamburger" class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span class="bar b1"></span>
+        <span class="bar b2"></span>
+        <span class="bar b3"></span>
+      </button>
+    </div>
+
+    <!-- Mobile full-screen overlay nav -->
+    <nav id="mobileNav" class="nav-overlay" aria-hidden="true" aria-label="Mobile navigation">
+      <ul>
+        <li><a class="mobile-link" href="#home">Home</a></li>
+        <li>
+          <button class="mobile-sub-toggle" aria-expanded="false">Gallery ▾</button>
+          <ul class="mobile-sub">
+            <li><a class="mobile-link" href="#gallery1">Gallery 1</a></li>
+            <li><a class="mobile-link" href="#gallery2">Gallery 2</a></li>
+          </ul>
+        </li>
+        <li><a class="mobile-link" href="#fanfav">Fan favourite</a></li>
+        <li><a class="mobile-link" href="#contact">Contact us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO / LANDING -->
+  <main>
+    <section id="home" class="hero" role="region" aria-label="Landing">
+      <div class="hero-inner">
+        <div class="hero-left">
+          <h2 class="fixed">DISCOVER&nbsp;NEW</h2>
+          <div class="typewrap" aria-live="polite">
+            <span id="typeText" class="typed"></span><span class="cursor" aria-hidden="true">|</span>
+          </div>
+          <p class="sub">Dark mode anime curation • new releases • character spotlights</p>
+          <a class="btn" href="#gallery1">Browse Gallery</a>
+        </div>
+
+        <div class="hero-right" aria-hidden="true">
+          <!-- decorative / empty: hero bg covers the right -->
+           <!-- <img src="image/img1.jpg" alt=""> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- INTRO (very long ~2000 words) -->
+    <section id="intro" class="section intro">
+      <div class="container">
+        <h2>Introduction — The World of Anime</h2>
+        <article class="long-intro">
+          <!-- 2000+ words about anime -->
+          <p>
+            Anime — a word that for many evokes vibrant color, sweeping music, stylized characters, and storytelling that ranges from the deeply intimate to the cosmically epic — has grown from a niche cultural product to a global creative force. For fans and newcomers alike, the appeal of anime lies not just in its visual aesthetic, but in the breadth of ideas and emotions it explores. 
+          </p>
+          <!-- <p>
+            Genre diversity is one of anime’s greatest strengths. There’s literally something for nearly every taste: shonen (targeting young males) with battle-driven narratives such as “Naruto” and “One Piece”; shojo (targeting young females) exploring friendship and romance; seinen and josei for mature readers with nuanced themes and slower emotional work; isekai stories of otherworld transport and adventure; slice-of-life works that find deep meaning in everyday routines; horror that leans into psychological dread; mecha epics built around giant robots as metaphors; sports anime that turn athletic contests into character crucibles; and countless hybrids that blur boundaries. This genre flexibility permits creators to experiment—combining romance with political allegory, or comedy with existential dread.
+          </p> -->
+          <p>
+            Anime’s music and sound design are integral to its impact. Opening and ending songs often become cultural touchstones; composers like Joe Hisaishi or Yoko Kanno are celebrated for crafting evocative soundtracks that elevate narrative beats into unforgettable moments. The combination of voice acting (seiyuu) and carefully composed scores transforms scenes into emotional experiences that stay with viewers long after an episode ends.
+          </p>
+
+          <p>
+            Another crucial component of anime’s contemporary spread has been fandom. From local clubs trading VHS tapes to today’s global online communities, fans have long acted as ambassadors for the medium. Fan translation (fansubs), fan art, AMVs (anime music videos), and fanfiction expanded access in the pre-streaming era and shaped subcultural identity. Fans attend conventions, form cosplay communities, and create derivative works that both celebrate and reimagine source material. This participatory culture keeps titles alive through discussion, critique, and creation—often influencing studios’ decisions about sequels or spin-offs.
+          </p>
+          <p>
+            On the creative side, anime has embraced technological change without abandoning hand-drawn aesthetics. Digital painting, 3D modeling, and hybrid pipelines allow complex camera moves and detailed environments that were difficult or expensive using only traditional cel animation. Studios use 3D to render mechanical objects (like mecha) and compositing tools to enhance lighting and atmospheric effects. Still, many fans and creators advocate for the preservation of hand-drawn sensibilities because subtle imperfections often give warmth and personality that purely procedural visuals can lack.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- GALLERY 1: ANIME IMAGES -->
+    <section id="gallery1" class="section gallery section-shade-1">
+      <div class="container">
+        <h2>Gallery 1 — Anime Scenes</h2>
+        <div class="grid gallery-grid">
+          <!-- Replace src with images/anime1.jpg ... anime8.jpg -->
+          <figure class="gallery-item">
+            <img src="image/bsd1.jpg" alt="Anime Scene 1">
+            <figcaption><span>Bungo Stray Dogs</span></figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="image/apothecary.jpg" alt="Anime Scene 2">
+            <figcaption><span>Apothecary Diaries</span></figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="image/tog2.jpg" alt="Anime Scene 3">
+            <figcaption><span>Tower Of God</span></figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="image/img3.jpg" alt="Anime Scene 4">
+            <figcaption><span>Demon Slayer</span></figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="image/img4.jpg" alt="Anime Scene 5">
+            <figcaption><span>Jujustu Kaisen</span></figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="image/spy1.jpg" alt="Anime Scene 6">
+            <figcaption><span>Spy X Family</span></figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="image/hellsparadise1.jpg" alt="Anime Scene 7">
+            <figcaption><span>Hells Paradise</span></figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="image/bluelock.png" alt="Anime Scene 8">
+            <figcaption><span>Blue Bock</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY 2: CHARACTERS -->
+    <section id="gallery2" class="section gallery section-shade-2">
+      <div class="container">
+        <h2>Gallery 2 — Characters</h2>
+        <div class="grid gallery-grid">
+          <!-- Replace src with images/char1.jpg ... char8.jpg -->
+          <figure class="gallery-item">
+            <img src="image/ad.jpg" alt="Character 1">
+            <figcaption><span>Maomao</span></figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="image/muzan.jpg" alt="Character 2">
+            <figcaption><span>Muzan</span></figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="image/dasai1.jpg" alt="Character 3">
+            <figcaption><span>Dasai</span></figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="image/sukuna.jpg" alt="Character 4">
+            <figcaption><span>Sukuna</span></figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="image/doma1.jpg" alt="Character 5">
+            <figcaption><span>Doma</span></figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="image/bsd2.jpeg" alt="Character 6">
+            <figcaption><span>BSD</span></figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="image/hellsparadise.jpg" alt="Character 7">
+            <figcaption><span>Gabimaru</span></figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="image/bachira.jpg" alt="Character 8">
+            <figcaption><span>Bachira</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAN FAVOURITE -->
+    <section id="fanfav" class="section fanfav section-shade-3">
+      <div class="container">
+        <h2>Fan Favourite — Animes & Characters</h2>
+        <div class="fanfav-grid">
+          <div class="fanfav-item">
+            <h3>Top Animes</h3>
+            <ol>
+              <li>Starlight Requiem</li>
+              <li>Neon Drift</li>
+              <li>Edge of Dawn</li>
+              <li>Wisteria Chronicles</li>
+              <li>Silent Oceans</li>
+            </ol>
+          </div>
+
+          <div class="fanfav-item">
+            <h3>Top Characters</h3>
+            <ol>
+              <li>Kai — Wanderer</li>
+              <li>Mira — Scout</li>
+              <li>Akio — Pilot</li>
+              <li>Hana — Medic</li>
+              <li>Rin — Scholar</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact section-shade-4">
+      <div class="container">
+        <h2>Contact Us & Comments</h2>
+        <div class="contact-grid">
+          <form id="contactForm" class="contact-form" novalidate>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+            <label for="comment">Comment</label>
+            <textarea id="comment" name="comment" rows="5" placeholder="Share your thoughts..." required></textarea>
+
+            <button type="submit" class="btn">Post Comment</button>
+            <p id="formNote" class="form-note" aria-live="polite"></p>
+          </form>
+
+          <aside class="comments">
+            <h3>Comments</h3>
+            <ul id="commentList" class="comment-list" aria-live="polite"></ul>
+            <button id="clearComments" class="clear-btn">Clear All Comments</button>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer section-shade-5">
+    <div class="container footer-inner">
+      <div class="brand">
+        <a href="#home" class="brand-link">DISCOVER NEW</a>
+        <small>© <span id="year"></span> DISCOVER NEW — All rights reserved</small>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer links">
+        <a href="#gallery1">Gallery 1</a>
+        <a href="#gallery2">Gallery 2</a>
+        <a href="#fanfav">Fan favourite</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
